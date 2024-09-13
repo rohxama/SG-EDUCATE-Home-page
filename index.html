@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SG-EDUCATE</title>
+    <!--------------------------------------------Bootstrap Css Link-------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--------------------------------------------Font Family Link---------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100&family=Inter:wght@100;200;300;400;500;600;700;800;900&     family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!--------------------------------------------CSS SLick Theme Cdn------------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------------------------------CSS Slick Min Cdn--------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------------------------------Bootstrap Icons Link------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--------------------------------------------Css File Link------------------------------------------->
+    <link rel="stylesheet" href="./assets/style/style1.css">
+    <!--------------------------------------------Inline Css---------------------------------------------->
+    <style></style>
+</head>
+
+<body>
+
+    <!--------------------------------------------Header-------------------------------------------------->
+    <header>
+        <!--------------------------------------------Primary Header------------------------------------------>
+        <div class="container-fluid footer-clr d-xl-block d-none">
+            <div class="container">
+                <nav class="navbar navbar-expand row">
+                    <!-- Site Logo  -->
+                    <a class="navbar-brand col-3" href="#">
+                        <img src="./assets/media/logo.png" class="d-inline-block align-top" alt="Logo">
+                    </a>
+                    <!-- Social Media Icons -->
+                    <ul class="navbar-nav col-2 gap-2">
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://www.facebook.com/">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://twitter.com/">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://www.linkedin.com/">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://www.instagram.com/">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Contact and Mail Us -->
+                    <div class=" col-7 d-flex pb-2 justify-content-around">
+                        <div class="d-flex gap-3 align-items-center me-5">
+                            <a class="nav-link" href="tel:040-2039375">
+                                <i class="bi bi-telephone-fill fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column">
+                                <span class="navbar-text fs-6 fw-bold text-white pb-0">Call Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="tel:040-2039375">040-2039375</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <a class="nav-link" href="mailto:support@sg-educate.com">
+                                <i class="bi bi-envelope-fill  fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column">
+                                <span class="navbar-text fs-6 fw-bold text-white pb-0">Email Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="mailto:mailto:support@sg-educate.com">support@sg-educate.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-------------------------------------------Secondary Header----------------------------------------->
+        <div class="container-fluid sec-bg-clr d-xl-block d-none">
+            <div class="container">
+                <nav class="nav navbar-expand row ms-1 pt-2 pb-1">
+                    <!-- Nav Menu  -->
+                    <ul class="navbar-nav col-5 gap-xxl-5 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How-To Guides</a>
+                        </li>
+                        <li class="nav-item dropdown under-menu">
+                            <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Courses
+                            </a>
+                            <ul class="dropdown-menu ps-3 sec-bg-clr has-child"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li class="sub-menu">
+                                    <a class="dropdown-items text-decoration-none" href="#">SEO</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Digital
+                                        Marketing</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Web
+                                        Development</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Graphic
+                                        Designing</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Artificial
+                                        Intelligence</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                    </ul>
+                    <div class="col-4">
+                        <ul class="navbar-nav gap-4 ps-5 ms-xxl-3 ms-0">
+                            <li class="nav-item ms-xxl-5 ms-0">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                            <li class="nav-item nav-border pe-5">
+                                <a class="nav-link" href="./assets/Pages/blog.html" target="_blank">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="d-flex gap-5 align-items-center">
+                            <div class="d-flex gap-2">
+                                <div class="nav-sec-bg rounded-circle"><a class="ps-1" href=""><i
+                                            class=" text-black bi-search fs-5"></i></a></div>
+                                <div class="nav-sec-bg rounded-circle"><a class="ps-1" href="#"><i
+                                            class=" text-black bi-bell fs-5"></i></a></div>
+                            </div>
+                            <div class="d-flex align-items-end gap-xxl-2 gap-1">
+                                <img src="./assets/media/Ellipse 1400.png" alt="">
+                                <p class="mb-3">Romman Anwer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--------------------------------------------Mobile Header------------------------------------------->
+    <nav class="navbar footer-clr d-xl-none d-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/media/logo.png" class="d-inline-block" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end footer-clr" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#"><img src="./assets/media/logo.png" class="d-inline-block mt-2"
+                            alt="Logo"></a>
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="cross"><span
+                            class="text-white fs-1">+</span></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item d-flex">
+                            <a class="nav-link white-text t-clr" href="#">How-To Guides</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                            <a class="nav-link white-text t-clr" href="#">Services</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                            <a class="nav-link white-text t-clr" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex">
+                            <a class="nav-link dropdown-toggle white-text t-clr" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu footer-clr">
+                                <li class="">
+                                    <a class="dropdown-item white-text" href="#">SEO</a>
+                                    <a class="dropdown-item white-text" href="#">Digital Marketing</a>
+                                    <a class="dropdown-item white-text" href="#">Web Development</a>
+                                    <a class="dropdown-item white-text" href="#">Graphic Designing</a>
+                                    <a class="dropdown-item white-text" href="#">Artifical Intelligence</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--MObile Contact and Mail Us -->
+                    <div class="mt-4">
+                        <div class="d-flex gap-3 align-items-center">
+                            <a class="nav-link" href="tel:040-2039375">
+                                <i class="bi bi-telephone-fill fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column me-5 mb-2">
+                                <span class="navbar-text fs-6 fw-bold text-white">Call Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="tel:040-2039375">040-2039375</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mt-3">
+                            <a class="nav-link" href="mailto:support@sg-educate.com">
+                                <i class="bi bi-envelope-fill  fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column mb-2">
+                                <span class="navbar-text fs-6 fw-bold text-white">Email Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="mailto:mailto:support@sg-educate.com">support@sg-educate.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Social Media Icons -->
+                    <ul class="navbar-nav gap-4 flex-row mt-5">
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.facebook.com/">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://twitter.com/">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.linkedin.com/">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.instagram.com/">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------Main------------------------------------------------->
+    <main>
+        <!-- Hero Section  -->
+        <section class="hero-section">
+            <div class="carousel slide position-relative" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/media/header1.png" class="d-block w-100" alt="header-img1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/media/header2.png" class="d-block w-100" alt="header-img2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/media/header3.png" class="d-block w-100" alt="header-img3">
+                    </div>
+                </div>
+                <!-- Hero Section Heading  -->
+                <div class=" position-absolute top-50 start-50 translate-middle">
+                    <h1 class="hero-section-heading text-white fw-bold display-3">Hands-On Learning</h1>
+                    <!-- Hero section Search bar  -->
+                    <form class="position-relative mt-lg-5 mt-0">
+                        <div class="mt-md-5 mt-0">
+                            <div class="">
+                                <i class="position-absolute bi bi-search search-icon"></i>
+                            </div>
+                            <label for="searchInput" class="form-label"></label>
+                            <input type="text" class=" header-input form-control rounded-pill fs-6 border-0 pt-3 pb-3 "
+                                id="searchInput" placeholder="Find Expert tips, tricks, and advice">
+                        </div>
+                        <button type="button" class="header-button button  rounded-pill pb-2 pt-2">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <p class="h2 fw-bold pt-5 mb-1 text-xxl-start text-center">Courses for Growth & Success</p>
+                <hr class="mt-0 ms-1 pri-bg-clr d-xxl-block d-none ">
+                <div class="row row-cols-8 g-4 mt-3 slider">
+                    <div class="col-md-6 col-12">
+                        <div class="card shadow mb-5 bg-body rounded">
+                            <img src="./assets/media/Image-card1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <img src="./assets/Media/course-icon1.png" alt="course-icon">
+                                    </div>
+                                    <p class="h5 fw-bold">Artificial Intelligence</p>
+                                </div>
+                                <hr class="hr-full mt-0 w-100 mb-2">
+                                <div class="d-flex">
+                                    <div class="h-100 me-3 mt-0">
+                                        <img src="./assets/media/person1.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="card-text fs-6 lh-sm mt-3 text-black">
+                                    Jumpstart your AI journey with our comprehensive Artificial Intelligence Course
+                                    in Sahiwal! Gain practical insights with interactive bootcamps, enlightening.
+                                </p>
+                                <img src="./assets/media/Group 237814.png" alt="">
+                                <button type="button" class="card-button btn1 mb-3 mt-3 fw-bold">Read
+                                    More</button>
+                                <button type="button" class="card-button btn2 fw-bold mb-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card shadow  mb-5 bg-body rounded">
+                            <img src="./assets/media/Image-card2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <img src="./assets/Media/course-icon2.png" alt="course-icon">
+                                    </div>
+                                    <p class="h5 fw-bold">Website Development</p>
+                                </div>
+                                <hr class="hr-full mt-0 w-100 mb-2">
+                                <div class="d-flex">
+                                    <div class="h-100 me-3 mt-0">
+                                        <img src="./assets/media/person2.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black">Romman
+                                                Anwer</span></a>
+                                    </div>
+                                </div>
+                                <p class="card-text fs-6 lh-sm mt-3 text-black">
+                                    Jumpstart your AI journey with our comprehensive Artificial Intelligence Course
+                                    in Sahiwal! Gain practical insights with interactive bootcamps, enlightening.
+                                </p>
+                                <img src="./assets/media/Group 237814.png" alt="">
+                                <button type="button" class="card-button btn1 mb-3 mt-3 fw-bold">Read
+                                    More</button>
+                                <button type="button" class="card-button btn2 fw-bold mb-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card shadow mb-5 bg-body rounded">
+                            <img src="./assets/media/Image-card1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <img src="./assets/Media/course-icon3.png" alt="course-icon">
+                                    </div>
+                                    <p class="h5 fw-bold">Digital Marketing</p>
+                                </div>
+                                <hr class="hr-full mt-0 w-100 mb-2">
+                                <div class="d-flex">
+                                    <div class="h-100 me-3 mt-0">
+                                        <img src="./assets/media/person1.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="card-text fs-6 lh-sm mt-3 text-black">
+                                    Jumpstart your AI journey with our comprehensive Artificial Intelligence Course
+                                    in Sahiwal! Gain practical insights with interactive bootcamps, enlightening.
+                                </p>
+                                <img src="./assets/media/Group 237814.png" alt="">
+                                <button type="button" class="card-button btn1 mb-3 mt-3 fw-bold">Read
+                                    More</button>
+                                <button type="button" class="card-button btn2 fw-bold mb-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card shadow mb-5 bg-body rounded">
+                            <img src="./assets/media/Image-card4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <img src="./assets/Media/seo-optimization 1.png" alt="course-icon">
+                                    </div>
+                                    <p class="h5 fw-bold">Search Engine Optmization</p>
+                                </div>
+                                <hr class="hr-full mt-0 w-100 mb-2">
+                                <div class="d-flex">
+                                    <div class="h-100 me-3 mt-0">
+                                        <img src="./assets/media/person1.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="card-text fs-6 lh-sm mt-3 text-black">
+                                    Jumpstart your AI journey with our comprehensive Artificial Intelligence Course
+                                    in Sahiwal! Gain practical insights with interactive bootcamps, enlightening.
+                                </p>
+                                <img src="./assets/media/Group 237814.png" alt="">
+                                <button type="button" class="card-button btn1 mb-3 mt-3 fw-bold">Read
+                                    More</button>
+                                <button type="button" class="card-button btn2 fw-bold mb-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card shadow mb-5 bg-body rounded">
+                            <img src="./assets/media/Image-card5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <img src="./assets/Media/e-commerce.png" alt="course-icon">
+                                    </div>
+                                    <p class="h5 fw-bold">E-Commerce</p>
+                                </div>
+                                <hr class="hr-full mt-0 w-100 mb-2">
+                                <div class="d-flex">
+                                    <div class="h-100 me-3 mt-0">
+                                        <img src="./assets/media/person1.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="card-text fs-6 lh-sm mt-3 text-black">
+                                    Jumpstart your AI journey with our comprehensive Artificial Intelligence Course
+                                    in Sahiwal! Gain practical insights with interactive bootcamps, enlightening.
+                                </p>
+                                <img src="./assets/media/Group 237814.png" alt="">
+                                <button type="button" class="card-button btn1 mb-3 mt-3 fw-bold">Read
+                                    More</button>
+                                <button type="button" class="card-button btn2 fw-bold mb-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card shadow mb-5 bg-body rounded">
+                            <img src="./assets/media/Image-card6.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <img src="./assets/Media/graphic-des.png" alt="course-icon">
+                                    </div>
+                                    <p class="h5 fw-bold">Graphic Designing</p>
+                                </div>
+                                <hr class="hr-full mt-0 w-100 mb-2">
+                                <div class="d-flex">
+                                    <div class="h-100 me-3 mt-0">
+                                        <img src="./assets/media/person1.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="card-text fs-6 lh-sm mt-3 text-black">
+                                    Jumpstart your AI journey with our comprehensive Artificial Intelligence Course
+                                    in Sahiwal! Gain practical insights with interactive bootcamps, enlightening.
+                                </p>
+                                <img src="./assets/media/Group 237814.png" alt="">
+                                <button type="button" class="card-button btn1 mb-3 mt-3 fw-bold">Read
+                                    More</button>
+                                <button type="button" class="card-button btn2 fw-bold mb-3">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row row-cols-2 mb-5 mt-5">
+                    <div class="col-xl-9 col-lg-6">
+                        <p class="h3 fw-bold card-heading1 ms-xxl-0 ms-md-5 ms-0">Digital Marketing</p>
+                        <hr class="mt-0 pri-bg-clr mb-0  ms-xxl-0 ms-md-5 ms-0">
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class=" d-flex gap-3 justify-content-end align-items-center">
+                            <a class="text-decoration-none h6 t-clr-1 card-heading2" href="#">Browse More</a>
+                            <i class="bi bi-arrow-right fs-5 mb-1 text-black me-xxl-0 me-md-5 me-0 "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4 row-cols-4">
+                    <div class="col-xl-3 col-md-6 col-12 ">
+                        <div class="card2">
+                            <img src="./assets/media/DM-image1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12p">
+                                                Abdul Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class=" text-capitalize text-black fs-18px fw-500">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nuncamet vestibulum donec variuseget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="card2">
+                            <img src="./assets/media/DM-image2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12px">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class=" text-capitalize text-black fs-18px fw-500">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nunc amet vestibulum donec varius eget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="card2">
+                            <img src="./assets/media/DM-image3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12px">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class=" text-capitalize text-black fs-18px fw-500">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nunc amet vestibulum donec varius eget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="card2">
+                            <img src="./assets/media/DM-image4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12px">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class=" text-capitalize text-black fw-500 fs-18px">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nunc amet vestibulum donec varius eget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row row-cols-2 mb-5 mt-5">
+                    <div class="col-xl-9 col-lg-6">
+                        <p class="h3 fw-bold card-heading1 ms-xxl-0 ms-md-5 ms-0">Web Development</p>
+                        <hr class="mt-0 pri-bg-clr mb-0  ms-xxl-0 ms-md-5 ms-0">
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class=" d-flex gap-3 justify-content-end align-items-center">
+                            <a class="text-decoration-none h6 t-clr-1 card-heading2" href="#">Browse More</a>
+                            <i class="bi bi-arrow-right fs-5 mb-1 text-black me-xxl-0 me-md-5 me-0 "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-4 gy-4 ">
+                    <div class="col-xl-3 col-md-6 col-12 ">
+                        <div class="card2">
+                            <img src="./assets/media/WD-image1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12px">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class="text-capitalize text-black fw-500 fs-18px">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nunc amet vestibulum donec varius eget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 ">
+                        <div class="card2">
+                            <img src="./assets/media/WD-image2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12px">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class="text-capitalize text-black fw-500 fs-18px">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nunc amet vestibulum donec varius eget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 ">
+                        <div class="card2">
+                            <img src="./assets/media/WD-image3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12px">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class=" text-capitalize text-black fw-500 fs-18px">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nunc amet vestibulum donec varius eget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 ">
+                        <div class="card2">
+                            <img src="./assets/media/WD-image4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex mt-3">
+                                    <div class="h-100 me-1">
+                                        <img src="./assets/media/person3.png" alt="...">
+                                    </div>
+                                    <div class="">
+                                        <p class="text-muted mb-0 lh-1 fs-8px">Instructed by</p>
+                                        <a class="text-decoration-none" href="#"><span class="text-black fs-12px">Abdul
+                                                Rehman</span></a>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Technology / 10min read</p>
+                                <p class=" text-capitalize text-black fw-500 fs-18px">Diam
+                                    eu iaculis orci ut in mi vitae. In id orci nibh lectus?</p>
+                                <p class="mt-2 lh-sm fs-6 fw-400">Placerat massa tellus nam
+                                    faucibus eget auctor. Vel nunc amet vestibulum donec varius eget morbi.
+                                </p>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <a class="text-decoration-none fs-6 t-clr-1 mb-1 card-btn" href="#">Read More</a>
+                                    <div class="">
+                                        <i class="bi bi-arrow-right fs-6 t-clr-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <!-- Elite Box -->
+                <div class="mt-5 sec-bg-clr pb-4 elite-box">
+                    <p class="h3 fw-bold text-center pt-5 text-black">Join Elite Learning: Education With
+                        Purpose</p>
+                    <form class=" mt-2 ms-2 me-2">
+                        <div class="position-relative elite-form">
+                            <label for="searchInput" class="form-label"></label>
+                            <input type="text" class="elite-input form-control fs-5 border-0" id="searchInput"
+                                placeholder="Enter your email address">
+                            <button type="button" class="elite-btn button fs-6 fw-normal rounded">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------------------Footer---------------------------------------------------------->
+    <footer>
+        <div class="container-fluid footer-clr">
+            <div class="container">
+                <div class="row row-cols-4 mt-5 pt-5 pb-3">
+                    <div class="col-xl-5 col-12 pt-5">
+                        <a class="" href="#"><img src="./assets/media/logo.png" alt=""></a>
+                        <p class="lh-sm text-white mt-3 footer-para fs-18px fw-400">
+                            SG-Educate Aims To
+                            Teach, Enrich And Transform All Its Readers And Subscribers. Our Goal Is To Edify Our
+                            Audience By Offering The Latest, Trending And Most Important Updates From The Vast Field Of
+                            Technology.</p>
+                        <ul class="navbar-nav d-flex  gap-2 flex-row mt-4">
+                            <li class="nav-item me-2 d-flex nav-bg rounded-circle">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.facebook.com/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 d-flex nav-bg rounded-circle">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://twitter.com/">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 d-flex nav-bg rounded-circle">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.linkedin.com/">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-bg rounded-circle d-flex">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.instagram.com/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-6 col-12 mt-5">
+                        <ul class="navbar-nav">
+                            <li class="text-white fs-6 fw-bold mb-4">Tutorials</li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Business</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Technology</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Artifical
+                                    Marketing</a></li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Gadgets</a>
+                            </li>
+                            <li class="mb-5 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Tools</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-6 col-12 mt-5">
+                        <ul class="navbar-nav">
+                            <li class="text-white fs-6 fw-bold mb-4">Useful Links</li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Community</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Podcast</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Articles &
+                                    Blogs</a></li>
+                            <li class="mb-5 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-12 mt-5">
+                        <ul class="navbar-nav">
+                            <li class="text-white fs-6 fw-bold mb-4">About Us</li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Term of
+                                    use</a></li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Contact
+                                    Us</a></li>
+                            <li class="mb-5 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Work
+                                    with
+                                    us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="w-100 text-white mb-3">
+                <p class=" text-center text-white fs-6 fw-lighter pb-2 mb-0">Copyright &copy;<span
+                        class="fs-6 fw-bold text-white"> SG-EDUCATE </span> 2023</p>
+            </div>
+        </div>
+    </footer>
+    <!---------------------------------------------Bootstrap Js Link-------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!----------------------------------------------JQuery Cdn-------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!----------------------------------------------Slick Carousel Js Link-------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/script/custom1.js"></script>
+
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            arrows: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev img-fluid slick-icons' src='./assets/media/Vector.png'>",
+            nextArrow: "<img class='a-right control-c next slick-next img-fluid slick-icons' src='./assets/media/Vector2.png'>",
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 979,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                    }
+                },
+            ]
+        });
+    </script>
+</body>
+
+</html>

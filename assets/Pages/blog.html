@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <!--------------------------------------------Bootstrap Css Link-------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--------------------------------------------Font Family Link---------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100&family=Inter:wght@100;200;300;400;500;600;700;800;900&     family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!--------------------------------------------CSS SLick Theme Cdn------------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------------------------------CSS Slick Min Cdn--------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------------------------------Bootstrap Icons Link------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--------------------------------------------Css File Link------------------------------------------->
+    <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="../style/style1.css">
+    <!--------------------------------------------Inline Css---------------------------------------------->
+    <style></style>
+</head>
+
+<body
+
+    <!--------------------------------------------Header-------------------------------------------------->
+    <header>
+        <!--------------------------------------------Primary Header------------------------------------------>
+        <div class="container-fluid footer-clr d-xxl-block d-none">
+            <div class="container">
+                <nav class="navbar navbar-expand row">
+                    <!-- Site Logo  -->
+                    <a class="navbar-brand col-3" href="#">
+                        <img src="../media/logo.png" class="d-inline-block align-top" alt="Logo">
+                    </a>
+                    <!-- Social Media Icons -->
+                    <ul class="navbar-nav col-2 gap-2">
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://www.facebook.com/">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://twitter.com/">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://www.linkedin.com/">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1" target="_blank" href="https://www.instagram.com/">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Contact and Mail Us -->
+                    <div class=" col-7 d-flex pb-2 justify-content-around">
+                        <div class="d-flex gap-3 align-items-center me-5">
+                            <a class="nav-link" href="tel:040-2039375">
+                                <i class="bi bi-telephone-fill fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column">
+                                <span class="navbar-text fs-6 fw-bold text-white pb-0">Call Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="tel:040-2039375">040-2039375</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <a class="nav-link" href="mailto:support@sg-educate.com">
+                                <i class="bi bi-envelope-fill  fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column">
+                                <span class="navbar-text fs-6 fw-bold text-white pb-0">Email Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="mailto:mailto:support@sg-educate.com">support@sg-educate.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-------------------------------------------Secondary Header----------------------------------------->
+        <div class="container-fluid sec-bg-clr d-xxl-block d-none">
+            <div class="container">
+                <nav class="nav navbar-expand row ms-1 pt-2 pb-1">
+                    <!-- Nav Menu  -->
+                    <ul class="navbar-nav col-5 gap-xxl-5 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How-To Guides</a>
+                        </li>
+                        <li class="nav-item dropdown under-menu">
+                            <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Courses
+                            </a>
+                            <ul class="dropdown-menu ps-3 sec-bg-clr has-child"
+                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li class="sub-menu">
+                                    <a class="dropdown-items text-decoration-none" href="#">SEO</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Digital
+                                        Marketing</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Web
+                                        Development</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Graphic
+                                        Designing</a> <br>
+                                    <a class="dropdown-items text-decoration-none" href="#">Artificial
+                                        Intelligence</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                    </ul>
+                    <div class="col-4">
+                        <ul class="navbar-nav gap-4 ps-5 ms-xxl-3 ms-0">
+                            <li class="nav-item ms-xxl-5 ms-0">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                            <li class="nav-item nav-border pe-5">
+                                <a class="nav-link" href="./assets/Pages/blog.html" target="_blank">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="d-flex gap-5 align-items-center">
+                            <div class="d-flex gap-2">
+                                <div class="nav-sec-bg rounded-circle"><a class="ps-1" href=""><i
+                                            class=" text-black bi-search fs-5"></i></a></div>
+                                <div class="nav-sec-bg rounded-circle"><a class="ps-1" href="#"><i
+                                            class=" text-black bi-bell fs-5"></i></a></div>
+                            </div>
+                            <div class="d-flex align-items-end gap-xxl-2 gap-1">
+                                <img src="../media/Ellipse 1400.png" alt="">
+                                <p class="mb-3">Romman Anwer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--------------------------------------------Mobile Header------------------------------------------->
+    <nav class="navbar footer-clr d-xxl-none d-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../media/logo.png" class="d-inline-block" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end footer-clr" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#"><img src="../media/logo.png" class="d-inline-block mt-2"
+                            alt="Logo"></a>
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="cross"><span
+                            class="text-white fs-1">+</span></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item d-flex">
+                            <a class="nav-link white-text t-clr" href="#">How-To Guides</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                            <a class="nav-link white-text t-clr" href="#">Services</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                            <a class="nav-link white-text t-clr" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex">
+                            <a class="nav-link dropdown-toggle white-text t-clr" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu footer-clr">
+                                <li class="">
+                                    <a class="dropdown-item white-text" href="#">SEO</a>
+                                    <a class="dropdown-item white-text" href="#">Digital Marketing</a>
+                                    <a class="dropdown-item white-text" href="#">Web Development</a>
+                                    <a class="dropdown-item white-text" href="#">Graphic Designing</a>
+                                    <a class="dropdown-item white-text" href="#">Artifical Intelligence</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--MObile Contact and Mail Us -->
+                    <div class="mt-4">
+                        <div class="d-flex gap-3 align-items-center">
+                            <a class="nav-link" href="tel:040-2039375">
+                                <i class="bi bi-telephone-fill fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column me-5 mb-2">
+                                <span class="navbar-text fs-6 fw-bold text-white">Call Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="tel:040-2039375">040-2039375</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mt-3">
+                            <a class="nav-link" href="mailto:support@sg-educate.com">
+                                <i class="bi bi-envelope-fill  fs-6"></i>
+                            </a>
+                            <div class="d-flex flex-column mb-2">
+                                <span class="navbar-text fs-6 fw-bold text-white">Email Us</span>
+                                <a class="text-decoration-none lh-1 pt-0 ps-0 white-text t-clr"
+                                    href="mailto:mailto:support@sg-educate.com">support@sg-educate.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Social Media Icons -->
+                    <ul class="navbar-nav gap-4 flex-row mt-5">
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.facebook.com/">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://twitter.com/">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.linkedin.com/">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-bg rounded-circle">
+                            <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.instagram.com/">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="head mt-5 mb-5 pt-5">
+                <h1 class="text-center">Your Digital Marketing Success With 99 Quick Hacks</h1>
+                <div class="profile d-flex justify-content-center align-items-center mt-4">
+                    <div class="profile-info d-flex align-items-center">
+                        <div class="profile-pic">
+                            <a href="#"><img src="../media/Ellipse 1387.png" alt=""></a>
+                        </div>
+                        <div class="row1 d-flex">
+                            <div class="profile-left d-flex flex-column">
+                                <span class="fw-500 fst-italic">Written by</span>
+                                <span class="fw-500 fst-italic">Posted by</span>
+                            </div>
+                            <div class="profile-right d-flex flex-column">
+                                <a href="#" class="fw-bold text-black">Jon Clark</a>
+                                <a href="#" class="fw-bold text-black">March 23, 2021</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social d-flex align-items-center">
+                        <a href=""><img src="../media/twitter-01 1.png" alt=""></a>
+                        <a href="#"><img src="../media/pintrest-01 1.png" alt=""></a>
+                        <a href="#"><img src="../media/linkedin-01 1.png" alt=""></a>
+                        <a href="#"><img src="../media/facebook-01 1.png" alt=""></a>
+                        <a href="#"><img src="../media/insta-01 1.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="hero-section1">
+        <img class="w-100" src="../media/goals 1.png" alt="">
+
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="portion-1" id="port1">
+                    <a href="#">
+                        <h2 class="fw-bold lh-lg fs-2">Digital Marketing Course Modules:</h2>
+                    </a>
+                    <p class="fs-5 fw-400">Copy
+                        Let’s move beyond the common ones you see over and over like the “how to” examples
+                        you’ll
+                        study when you learn how to write headlines and bring some new blood to your persuasive
+                        writing with these 22 titles(with headline examples) you can customize for your
+                        audience.
+                    </p>
+                </div>
+                <div class="portion-2" id="port2">
+                    <a href="#">
+                        <h2 class="fw-bold">Understanding the Essence of Keyword Research</h2>
+                    </a>
+                    <p class="fs-5 fw-400 lh-base">Keyword research is the backbone of online content. At its core, it’s about understanding
+                        what people are searching for and why. Let’s break it down in simpler terms.</p>
+                </div>
+                <div class="button-div text-center">
+                    <a href="#"><button>
+                            <div class="inside-button d-flex justify-content-center">
+                                <div class="button-icon">
+                                    <img class="pt-2" src="../media/icon _check circled outline_.png" alt="">
+                                </div>
+                                <div class="button-content">
+                                    <p class="fw-bold fs-4 lh-base mb-0">Learn More About SG-Educate</p>
+                                </div>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+                <div class="portion-3" id="port3">
+                    <a href="#">
+                        <h2 class="fs-2 fw-bold lh-base">Types of Keywords</h2>
+                    </a>
+                    <p class="fw-400 fs-5 lh-base">There are primarily four types of keywords according to search intent:</p>
+                    <ul class="ps-4">
+                        <li>
+                            <p class="fw-400 fs-5 lh-base"><b>Informational:</b> This is when people are on a quest for knowledge. They
+                                might be
+                                looking for tutorials, guides, or answers to specific questions. While platforms
+                                like YouTube offer video explanations, search engines provide written content to
+                                cater to this need.</p>
+                        </li>
+                        <li>
+                            <p class="fw-400 fs-5 lh-base"><b>Informational:</b> This is when people are on a quest for knowledge. They
+                                might be
+                                looking for tutorials, guides, or answers to specific questions. While platforms
+                                like YouTube offer video explanations, search engines provide written content to
+                                cater to this need.</p>
+                        </li>
+                        <li>
+                            <p class="fw-400 fs-5 lh-base"><b>Informational:</b> This is when people are on a quest for knowledge. They
+                                might be
+                                looking for tutorials, guides, or answers to specific questions. While platforms
+                                like YouTube offer video explanations, search engines provide written content to
+                                cater to this need.</p>
+                        </li>
+                        <li>
+                            <p class="fw-400 fs-5 lh-base"><b>Informational:</b> This is when people are on a quest for knowledge. They
+                                might be
+                                looking for tutorials, guides, or answers to specific questions. While platforms
+                                like YouTube offer video explanations, search engines provide written content to
+                                cater to this need.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="portion-4">
+                    <div class="portion-content d-flex align-items-center">
+                        <div class="portion-img">
+                            <a href="#"><img src="../media/Rectangle 107.png" alt=""></a>
+                        </div>
+                        <div class="portion-para">
+                            <div>
+                                <h3 class="fs-4 lh-base">Want us to scale your traffic?</h3>
+                            </div>
+                            <div>
+                                <p class="fw-500 fs-5 lh-base">For the first time, The Copy blogger methodology is now available to a select few
+                                    clients. We know it works. We’ve been doing it since 2006.</p>
+                            </div>
+                            <div class="portion-button">
+                                <a href="#"><button class="fs-5 fw-bold">Take the Next Step</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portion-10">
+                    <div class="course-card-wraper">
+                        <div class="course-upper-sec d-flex justify-content-between align-items-center position-relative">
+                            <div class="course-upper-sec-heading mb-5">
+                                <h2 class="fw-bold fs-5 lh-1">Related Articles</h2>
+                            </div>
+                            <div class="course-upper-sec-button d-flex mb-5">
+                                <div><a href="#" class="fw-500 text-decoration-none text-black">Browse More</a></div>
+                                <div class="arrow-icon">
+                                    <a href="#"><img src="../media/arrow-thin-right.png" alt="Arrow-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-lower-sec">
+                            <div class="course-card">
+                                <div class="course-card-image rounded-3">
+                                    <a href="#"><img src="../media/card-image1.png" alt="Image-card"></a>
+                                </div>
+                                <div class="course-card-info">
+                                    <div class="course-card-person-info d-flex align-items-center mt-3">
+                                        <div class="course-card-person-img">
+                                            <a href="#"><img src="../media/person3.png" alt="person-img"></a>
+                                        </div>
+                                        <div class="course-card-person-details">
+                                            <p class="color fw-400 lh-0 mb-0">Author Name</p>
+                                            <a href="#"><span class="lh-sm fw-400">M.Ahsh</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-card-details">
+                                        <p class="p3 fw-400 lh-sm text-black">Technology / 10min read</p>
+                                        <p class="p4 fs-5 fw-500 lh-base">Diam eu iaculis orci ut in mi vitae. In id orci nibh lectus?
+                                        </p>
+                                        <p class="p6 fw-400 lh-sm">Placerat massa tellus nam faucibus eget auctor. Vel nunc amet
+                                            vestibulum donec
+                                            varius eget morbi.</p>
+                                    </div>
+                                    <div class="course-card-button d-flex">
+                                        <div><a href="#"><button class="fw-500 text-black lh-sm">Read More</button></a></div>
+                                        <div class="arrow-icon">
+                                            <img src="../media/arrow-thin-right.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-card-image rounded-3">
+                                    <a href="#"><img src="../media/course-card2.png" alt="person-img"></a>
+                                </div>
+                                <div class="course-card-info">
+                                    <div class="course-card-person-info d-flex align-items-center mt-3">
+                                        <div class="course-card-person-img">
+                                            <a href="#"><img src="../media/person3.png" alt="person-img"></a>
+                                        </div>
+                                        <div class="course-card-person-details">
+                                            <p class="color fw-400 lh-0 mb-0">Author Name</p>
+                                            <a href="#"><span class="lh-sm fw-400">M.Ahsh</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-card-details">
+                                        <p class="p3 fw-400 lh-sm text-black">Technology / 10min read</p>
+                                        <p class="p4 fs-5 fw-500 lh-base">Diam eu iaculis orci ut in mi vitae. In id orci nibh lectus?
+                                        </p>
+                                        <p class="p6 fw-400 lh-sm">Placerat massa tellus nam faucibus eget auctor. Vel nunc amet
+                                            vestibulum donec
+                                            varius eget morbi.</p>
+                                    </div>
+                                    <div class="course-card-button d-flex">
+                                        <div><a href="#"><button class="fw-500 text-black lh-sm">Read More</button></a></div>
+                                        <div class="arrow-icon">
+                                            <img src="../media/arrow-thin-right.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-card-image rounded-3">
+                                    <a href="#"><img src="../media/course-card3.png" alt="Image-card"></a>
+                                </div>
+                                <div class="course-card-info">
+                                    <div class="course-card-person-info d-flex align-items-center mt-3">
+                                        <div class="course-card-person-img">
+                                            <a href="#"><img src="../media/person3.png" alt="person-img"></a>
+                                        </div>
+                                        <div class="course-card-person-details">
+                                            <p class="color fw-400 mb-0">Author Name</p>
+                                            <a href="#"><span class="lh-sm fw-400">M.Ahsh</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-card-details">
+                                        <p class="p3 fw-400 lh-sm text-black">Technology / 10min read</p>
+                                        <p class="p4 fs-5 fw-500 lh-base">Diam eu iaculis orci ut in mi vitae. In id orci nibh lectus?
+                                        </p>
+                                        <p class="p6 fw-400 lh-sm">Placerat massa tellus nam faucibus eget auctor. Vel nunc amet
+                                            vestibulum donec
+                                            varius eget morbi.</p>
+                                    </div>
+                                    <div class="course-card-button d-flex">
+                                        <div><a href="#"><button class="fw-500 text-black lh-sm">Read More</button></a></div>
+                                        <div class="arrow-icon">
+                                            <img src="../media/arrow-thin-right.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portion-5 mt-5">
+                            <h3 class="fs-4 fw-bold m-0 lh-base">Reader Comments (99)</h3>
+                            <hr class="hr">
+                            <div class="has-comment">
+                                <div class="comment pt-5 pb-4">
+                                    <div class="user-profile d-flex align-items-center">
+                                        <div class="user-profile-img">
+                                            <a href="#"><img src="../media/Photo.png" alt=""></a>
+                                        </div>
+                                        <div class="user-profile-info">
+                                            <a href="#" class="fw-bold">Lance Borgol</a>
+                                            <p class="fw-400 ms-0">Published on Jan 01, 2023</p>
+                                        </div>
+                                    </div>
+                                    <p class="fw-400 fs-5 l-sm mt-0">Bless you for this post. These mistakes make me grate my teeth, especially
+                                        when
+                                        people type loose instead of lose.</p>
+                                </div>
+                                <div class="comment com">
+                                    <div class="user-profile d-flex align-items-center">
+                                        <div class="user-profile-img">
+                                            <a href="#"><img src="../media/Photo.png" alt=""></a>
+                                        </div>
+                                        <div class="user-profile-info">
+                                            <a href="#" class="fw-bold">Lance Borgol</a>
+                                            <p class="fw-400 ms-0">Published on Jan 01, 2023</p>
+                                        </div>
+                                    </div>
+                                    <p class="fw-400 fs-5 l-sm mt-0">Bless you for this post. These mistakes make me grate my teeth, especially
+                                        when
+                                        people type loose instead of lose.</p>
+                                </div>
+                                <div class="comment com">
+                                    <div class="user-profile d-flex align-items-center">
+                                        <div class="user-profile-img">
+                                            <a href="#"><img src="../media/Photo.png" alt=""></a>
+                                        </div>
+                                        <div class="user-profile-info">
+                                            <a href="#" class="fw-bold">Lance Borgol</a>
+                                            <p class="fw-400 ms-0">Published on Jan 01, 2023</p>
+                                        </div>
+                                    </div>
+                                    <p class="fw-400 fs-5 l-sm mt-0">Bless you for this post. These mistakes make me grate my teeth, especially
+                                        when
+                                        people type loose instead of lose.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portion-6 mt-5">
+                    <h3 class="fw-bold fs-4 mb-0">Leave a Reply</h3>
+                    <hr class="hr">
+                    <p class="fw-400 fs-4 lh-base">Your email address will not be published. Required fields are marked *</p>
+                    <div class="portion-form mt-4">
+                        <form>
+                            <textarea name="user-box" id="user-box" class="fw-400 fs-3 w-100 ps-1 pt-2">Comment </textarea>
+                            <br>
+                            <input class="input3 fw-400 fs-3 w-100 ps-1" type="text" name="user-name" id="user-name" placeholder="Name*">
+                            <input class="input2 fw-400 fs-3 w-100 ps-1" type="email" name="user-email" id="user-email" placeholder="Email*">
+                            <br>
+                            <input type="checkbox" id="user-per" name="user-per">
+                            <label for="user-per" class="fw-400 fs-5"> Copy
+                                Save my name, email, and website in this browser for the next time <br>I
+                                comment.</label>
+                        </form>
+                    </div>
+                    <div class="post-button mt-3">
+                        <a href="#"><button class="fw-bold fs-5">Post Comment</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <aside>
+            <div class="aside-div">
+                <div class="portion-7 text-center">
+                    <div class="portion-heading d-flex align-items-center">
+                        <div class="heading">
+                            <p class="m-0 fs-4 fw-bold py-4 ps-4">Content</p>
+                        </div>
+                        <div>
+                            <a href="#"><img src="../media/icon _nav arrow down_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portion7-content d-flex flex-column pb-5">
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#port2" class="fs-5 fw-500">Affiliate marketing</a>
+                            </div>
+                        </div>
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#port3" class="fs-5 fw-500">Web Development</a>
+                            </div>
+                        </div>
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#port4" class="fs-5 fw-500">Digital Marketing</a>
+                            </div>
+                        </div>
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#" class="fs-5 fw-500">Technology</a>
+                            </div>
+                        </div>
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#" class="fs-5 fw-500">Content Marketing</a>
+                            </div>
+                        </div>
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#" class="fs-5 fw-500">E-commerce</a>
+                            </div>
+                        </div>
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#" class="fs-5 fw-500">Freelancing</a>
+                            </div>
+                        </div>
+                        <div class="img-content d-flex align-items-center ps-4 pe-3">
+                            <div class="icon-img">
+                                <a href="#"><img src="../media/add.png" alt=""></a>
+                            </div>
+                            <div class="para">
+                                <a href="#" class="fs-5 fw-500">Growth Strategies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portion-8 my-4">
+                    <h3 class="fw-bold fs-4 lh-base">Want to <br>Understand the Future of Content Marketing?</h3>
+                    <div class="portion-div">
+                        <div class="portion-email-form text-center">
+                            <form action="#">
+                                <input class="input1 fw-400" type="email" name="email" id="email" placeholder="Email">
+                            </form>
+                        </div>
+                        <div class="training-button text-center">
+                            <a href="#"><button class="fw-bold">Get the Free Training</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portion-9">
+                    <p class="fs-5 text-center">This Article is Helpful ?</p>
+                    <div class="button-div2 d-flex justify-content-between">
+                        <div class="button1">
+                            <button class="fw-bold">Yes</button>
+                        </div>
+                        <div class="button2">
+                            <button class="fw-bold">No</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+    </main>
+    <!--------------------------------------------------Footer---------------------------------------------------------->
+    <footer>
+        <div class="container-fluid footer-clr">
+            <div class="container">
+                <div class="row row-cols-4 mt-5 pt-5 pb-3">
+                    <div class="col-xl-5 col-12 pt-5">
+                        <a class="" href="#"><img src="../media/logo.png" alt=""></a>
+                        <p class="lh-sm text-white mt-3 footer-para fs-18px fw-400">
+                            SG-Educate Aims To
+                            Teach, Enrich And Transform All Its Readers And Subscribers. Our Goal Is To Edify Our
+                            Audience By Offering The Latest, Trending And Most Important Updates From The Vast Field Of
+                            Technology.</p>
+                        <ul class="navbar-nav d-flex  gap-2 flex-row mt-4">
+                            <li class="nav-item me-2 d-flex nav-bg rounded-circle">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.facebook.com/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 d-flex nav-bg rounded-circle">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://twitter.com/">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 d-flex nav-bg rounded-circle">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.linkedin.com/">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-bg rounded-circle d-flex">
+                                <a class="nav-link pt-1 ps-2" target="_blank" href="https://www.instagram.com/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-6 col-12 mt-5">
+                        <ul class="navbar-nav">
+                            <li class="text-white fs-6 fw-bold mb-4">Tutorials</li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Business</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Technology</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Artifical
+                                    Marketing</a></li>
+                            <li class="mb-3 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Gadgets</a>
+                            </li>
+                            <li class="mb-5 d-flex"><a class="nav-link text-decoration-none white-text t-clr"
+                                    href="#">Tools</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-sm-6 col-12 mt-5">
+                        <ul class="navbar-nav">
+                            <li class="text-white fs-6 fw-bold mb-4">Useful Links</li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Community</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Podcast</a>
+                            </li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Articles &
+                                    Blogs</a></li>
+                            <li class="mb-5 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-12 mt-5">
+                        <ul class="navbar-nav">
+                            <li class="text-white fs-6 fw-bold mb-4">About Us</li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Term of
+                                    use</a></li>
+                            <li class="mb-3 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Contact
+                                    Us</a></li>
+                            <li class="mb-5 d-flex"><a class=" nav-link text-decoration-none white-text t-clr"
+                                    href="#">Work
+                                    with
+                                    us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="w-100 text-white mb-3">
+                <p class=" text-center text-white fs-6 fw-lighter pb-2 mb-0">Copyright &copy;<span
+                        class="fs-6 fw-bold text-white"> SG-EDUCATE </span> 2023</p>
+            </div>
+        </div>
+    </footer>
+    <!---------------------------------------------Bootstrap Js Link-------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!----------------------------------------------JQuery Cdn-------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!----------------------------------------------Slick Carousel Js Link-------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../script/custom1.js"></script>
+
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            arrows: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev img-fluid slick-icons' src='./assets/media/Vector.png'>",
+            nextArrow: "<img class='a-right control-c next slick-next img-fluid slick-icons' src='./assets/media/Vector2.png'>",
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 979,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                    }
+                },
+            ]
+        });
+    </script>
+</body>
+
+</html>

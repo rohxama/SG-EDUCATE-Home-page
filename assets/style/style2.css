@@ -1,0 +1,384 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.social, .row1, .profile-info{
+    gap: 11px;
+}
+.head h1 {
+    font-size: 56px;
+    font-weight: 900;
+}
+.portion-1 p{
+    font-family: 'Satoshi', sans-serif !important;
+    line-height: 43px;
+}
+.profile-left, .profile-right {
+    gap: 25px;
+}
+.training-button button:hover, .button1 button:hover, .portion-button button:hover, .course-upper-sec-button:hover, .post-button button:hover{
+    color: #5B0888;
+    background-color: white;
+    border: 1px solid #5B0888;
+    transition: 0.8s;
+}
+.profile {
+    gap: 50px
+}
+.button2 button:hover{
+    color: white;
+    background-color: #5B0888;
+    border: none;
+    transition: 0.8s;
+}
+.course-card-button button:hover{
+    color: #5B0888;
+    transition: 0.8s;
+}
+.portion-3 P{
+    color: #212121;
+}
+.button-div {
+    margin: 63px 0px 34px 0px;
+}
+.button-div button {
+    background-color: #5B0888;
+    color: white;
+    max-width: 558px;
+    width: 100%;
+    height: 70px;
+    border: none;
+}
+.inside-button, .portion7-content {
+    gap: 18px;
+}
+.portion-4 .portion-content {
+    gap: 24px;
+    max-width: 728px;
+    border: 1.5px solid #ECE1FA;
+    width: 100%;
+}
+.portion-img {
+    margin: 40px 0px 44px 21px;
+}
+.portion-para {
+    padding: 24px 0px 62px 0px;
+}
+.portion-para h3 {
+    font-weight: 900;
+}
+.portion-button button {
+    background-color: #5D0888;
+    color: white;
+    min-width: 248px;
+    height: 60px;
+    border: none;
+    border-radius: 10px 0px 10px 0px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1240px;
+    margin: 50px auto 0px auto;
+    gap: 44px;
+}
+.portion-4{
+    margin: 38px 44px 44px 110px;
+}
+.portion-7 {
+    width: 300px;
+    border: 1px solid #5B0888;
+    border-radius:5px 0px 5px 0px;
+}
+.portion-8 {
+    width: 300px;
+    border: 1px solid #5B0888 ;
+    border-radius: 8px;
+}
+.portion-9 {
+    width: 300px;
+    border: 1px solid #5B0888;
+    border-radius: 10px 0px 10px 0px;
+}
+.portion-9 p {
+    font-weight: 900;
+    padding: 26px 0px 23px 0px;
+}
+.portion-email-form {
+    margin-top: 40px;
+}
+.training-button button {
+    width: 209px;
+    height: 47px;
+    background-color: #5B0888;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin: 30px 0px 49px 0px;
+    border-radius: 5px 0px 5px 0px;
+}
+.input1 {
+    height: 47px !important;
+    width: 201px !important;
+    font-size: 20px;
+    border: 1px solid #5D0888;
+    border-radius: 5px 0px 5px 0px;
+    outline: none;
+}
+.input1::placeholder {
+    color:#180C52;
+    text-align: center;
+}
+.portion-8 h3 {
+    padding: 18px 8px 0px 17px;
+}
+.portion-heading {
+    gap: 96px;
+}
+.button-div2 {
+    margin: 23px 0px 40px 0px;
+    gap: 62px;
+    padding: 0px 51px 0px 51px;
+}
+.button1 button, .button2 button{
+    background-color: #5B0888;
+    color: white;
+    width: 66px;
+    height: 66px;
+    border-radius: 37px;
+    font-size: 15px;
+    border: none;
+}
+.button2 button {
+    background-color: #fff;
+    color: #260055;
+    border: 1px solid #260055;
+}
+.img-content {
+    gap: 15px;
+}
+.com{
+    border-top: 1px solid #EEEE;
+}
+.user-profile {
+    gap: 16px;
+}
+.comment p {
+    margin-left: 80px;
+}
+.user-profile-info {
+    margin-top: 8px;
+}
+.user-profile-info a {
+    color: #260055;
+}
+.user-profile-info p {
+    font-size: 14px;
+    color: #666666;
+}
+.portion-form textarea {
+    height: 383px;
+    max-width: 869px;
+    color: #7B7B7B;
+    font-family: 'Inter', sans-serif !important;
+    outline: none;
+}
+.portion-form .input3, .portion-form .input2 {
+    max-width: 336px;
+    height: 62px;
+    border: 1px solid #A09E9E;
+    outline: none;
+    margin: 29px 181px 29px 0px;
+}
+.portion-form .input2 {
+    margin: 29px 0px 0px 10px;
+}
+.portion-form .input3::placeholder, .portion-form .input2::placeholder, label {
+    color: #A09E9E;
+}
+.portion-form input {
+    width: 15px;
+    height: 15px;
+}
+.post-button button {
+    width: 179px;
+    height: 60px;
+    background-color: #5B0888;
+    color: white;
+    border-radius: 5px 0px 5px 0px;
+    border: none;
+}
+.course-upper-sec-button {
+    width: 200px;
+    gap: 25px;
+}
+.course-upper-sec-button a {
+    font-size: 15px;
+}
+.card-editor {
+    margin-top: -13px;
+}
+.course-card {
+    max-width: 275px;
+    margin: auto;
+}
+.course-card-person-info {
+    gap: 5px;
+}
+.course-card-person-details p {
+    font-size: 10px;
+    color: #A5A5A5;
+}
+.p6{
+    color: #666666;
+    font-size: 13px;
+}
+.p4 {
+    color: #192928;
+}
+.course-card-button button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+}
+.course-card-button{
+    gap: 12px;
+}
+.course-lower-sec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+}
+.course-upper-sec-heading h2::after{
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:30px;
+    height: 6px;
+    width: 0%;
+    background-color: #5B0888;
+    transition: all ease 1s;
+}
+.course-upper-sec-heading h2:hover::after{
+    width: 200px;
+}
+@media(max-width:1300px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    .section{
+        order: 1 !important;
+    }
+    aside{
+        order: 0 !important;
+        max-width: 980px;
+        margin: auto;
+    }
+    .aside-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        gap: 30px;
+    }
+    .portion-9 {
+        padding-top: 120px;
+    }
+}
+@media(max-width:1122px){
+    .aside-div{
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        max-width: 700px;
+    }
+    .portion-9{
+        padding-top: 0px;
+    }
+      .portion-4 .portion-content {
+        padding: 20px;
+    }  
+}
+@media(max-width:920px) {
+    .course-lower-sec {
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+    .profile{
+        display: block!important;
+    }
+    .profile-info{
+        justify-content: center !important;
+        padding-bottom: 30px !important;
+    }
+    .social{
+        justify-content: center !important;
+    }
+}
+@media(max-width:888px) {
+    .portion-4{
+        margin: 0px;
+    }
+    .portion-content{
+        display: block !important;
+    }
+    .portion-img{
+        text-align: center !important;
+        margin: 0px;
+    }
+    .portion-para{
+        text-align: center;
+        padding: 0px;
+    }
+}
+@media(max-width:819px) {
+    .portion-img{
+        margin: 0px;
+    }
+}
+@media(max-width:859px){
+    .input3{
+        margin-right: 0px!important;
+    }
+}
+@media(max-width:726px){
+    .aside-div{
+    grid-template-columns: 1fr;
+    margin: auto;
+    max-width: 550px;
+}
+}
+@media(max-width:573px) {
+    .course-card {
+        margin: auto !important;
+    }
+    .course-upper-sec {
+        display: block !important;
+    }
+    .button-content p{
+        font-size: 16px;
+    }
+}
+@media(max-width:742px) {
+    .course-lower-sec {
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+}
+@media(max-width:480px) {
+    .user-box{
+        width: 0% !important;
+    }
+    .inside-button .button-content p {
+        font-size: 15px!important;
+    }
+    .inside-button .button-icon img{
+        padding-top: 0px!important;
+    }
+    .portion-form .input2, .portion-form .input3{
+        margin: 0px!important;
+    }
+}
